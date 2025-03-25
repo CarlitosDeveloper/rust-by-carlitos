@@ -38,9 +38,35 @@
     - **Préstamos (borrowing)**.
     - **Tiempos de vida (lifetimes)**.
 
-        - **Native binary compilation**
+        - **Native binary compilation**
 
+            - Un binario es el lenguaje de ceros y unos, la forma más rápida, directa y precisa de comunicarse con el procesador de un computador.
 
+                - **Compilar** o **compilar el código** significa transformar todo el código fuente en un archivo ejecutable binario. En este caso, tomamos el código Rust y lo convertimos en un binario.
+
+                    - Tener el código compilado implica que:
+
+                        - **No se necesitan dependencias externas**, es decir, no hacen falta programas adicionales para ejecutar el binario.
+
+                        - **Alto rendimiento**: Al ser código nativo, el computador puede ejecutar el programa de forma más rápida y eficiente (hacer más con menos recursos).
+
+                        - **Cross-compiling (compilación cruzada)**: Podemos compilar el código fuente para diferentes sistemas operativos o arquitecturas. Aunque el binario cambia, el código fuente es el mismo, por lo que podemos reutilizarlo.
+
+                Déjame explicarte cómo funciona esto con un ejemplo:
+
+                    - Escribimos nuestro programa usando el lenguaje **Rust**.
+
+                        - Cuando compilamos el código, este pasa por varios procesos internos. Los más importantes son:
+
+                            - Primero, el compilador (`rustc`) transforma el código Rust en un lenguaje llamado **IR** (*Intermediate Representation* o Representación Intermedia), utilizando una infraestructura de compilación llamada **LLVM** (*Low Level Virtual Machine*).
+
+                            - Segundo, LLVM transforma el código IR en lenguaje ensamblador (**Assembly**) específico para la arquitectura del procesador (por ejemplo, x86_64 o ARM).
+
+                            - Tercero, el código en Assembly se convierte en **binario**, es decir, en instrucciones máquina (ceros y unos).
+
+                        - Finalmente, ese código binario se guarda en un archivo ejecutable (.exe, .out, etc.) que puede ejecutarse directamente en el sistema operativo.
+
+---
 
         - **Safe concurrency (no data races)**
 
