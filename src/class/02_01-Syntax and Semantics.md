@@ -17,6 +17,15 @@
 
 ### - 2.1.3 Control Flow Constructs
 
+- Una **Control Flow Constructs** o mejor dicho las (**Estructuras de Control de Flujo**) Sirven para indicar **Como** y **Cuando** se va a ejecutar una porcion o ciertas partes del codigo. 
+
+    - `if` / `else` --> Ejecuta uno o el otro bloque.
+    - `while` --> Ejecuta el bloque mientras la condicion de cumpla.
+    - `for` --> Ejecuta un codigo para cada elemento del arreglo, lo cual se le conoce mayormente como iterar.
+    - `loop` --> Ejecuta un codigo infinitamente hasta que te salgas con `break`.
+    - `match` --> Ejecuta un codigo segun se cumpla el patron, comparandolo con varios patrones. esta es la version de `switch`.
+    - `if let` --> 
+
 ### - 2.1.4 Variables, Constants, and Data Types
 
 En rush existen varias formas de declarar una variable 
