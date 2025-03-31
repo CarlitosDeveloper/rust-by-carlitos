@@ -1,4 +1,6 @@
 fn main() {
+
+
     println!("✅ Cambiar el valor usando shadowing // ----- // ----- // ----- // ----- // ");
     let x = 5;               // Declaramos `x` con valor 5
     let x = x + 1;           // Reemplazamos `x` sumándole 1 (shadowing)
@@ -21,4 +23,5 @@ fn main() {
     }
     println!("y externo = {y}");    // 5 - Se imprime la variable original (fuera del bloque) - vieja
     println!("FIN!");
+
 }

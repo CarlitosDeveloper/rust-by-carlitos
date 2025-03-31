@@ -1,4 +1,6 @@
 
+# 02 - Language Basics
+
 - 2.4 Data Structures  
   - 2.4.1 Integers  
   - 2.4.2 Floats  

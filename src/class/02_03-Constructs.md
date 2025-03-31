@@ -1,4 +1,5 @@
 
+# 02 - Language Basics
 
 - 2.3 Constructs  
   - 2.3.1 Enums  
