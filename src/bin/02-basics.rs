@@ -1,5 +1,36 @@
-fn main() {
+/*
+    # 02 - Language Basics
+        - 2.1 Syntax and Semantics  
+        - 2.1.1 Variables, Constants, and Data Types  
+        - 2.1.2 Control Flow Constructs  
+        - 2.1.3 Functions and Method Syntax  
+        - 2.1.4 Pattern Matching and Destructuring
+*/
 
+
+// # 02 - Language Basics
+// - 2.1 Syntax and Semantics  
+// - 2.1.1 Variables, Constants, and Data Types  
+// - 2.1.2 Control Flow Constructs  
+// - 2.1.3 Functions and Method Syntax  
+// - 2.1.4 Pattern Matching and Destructuring
+
+
+// ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
+// ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
+
+
+// ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
+// ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
+
+// ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
+// ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
+
+// ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
+// ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
+
+
+fn declaracion_variable1 () {
 
     println!("✅ Cambiar el valor usando shadowing // ----- // ----- // ----- // ----- // ");
     let x = 5;               // Declaramos `x` con valor 5
@@ -25,3 +56,21 @@ fn main() {
     println!("FIN!");
 
 }
+
+
+fn main() {
+
+
+    declaracion_variable1();
+
+}
+
+
+fn add(a: i32, b: i32) -> i32 {
+    a + b  // Valor retornado implícitamente (sin `;`)
+}
+
+fn multiply(a: i32, b: i32) -> i32 {
+    return a * b; // retorno explícito
+}
+

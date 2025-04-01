@@ -44,3 +44,8 @@ fn run_bin(bin_name: &str) {
         println!("El binario '{}' terminó con error.", bin_name);
     }
 }
+
+fn multiply(a: i32, b: i32) -> i32 {
+    return a * b; // retorno explícito
+}
+

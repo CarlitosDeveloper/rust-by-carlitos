@@ -11,6 +11,18 @@
 
 ## - 2.1 Syntax and Semantics
 
+1° Rust busca que la sintaxis del lenguaje sea **legible** y con **poco ruido visual**.
+
+2° El lenguaje prioriza la **compatibilidad futura**, incluso si eso retrasa la incorporación de nuevas funciones.
+
+3° **Principios generales:** Rust se basa en **principios consistentes**. Esto significa que al aprender los conceptos clave, podrás comprender la mayoría de la estructura del lenguaje.
+
+4° **Componentes comunes:**
+   - **Declaraciones de ítems**: funciones, structs, enums, etc. Se definen una vez y se pueden reutilizar mientras estén en el mismo ámbito (*scope*).
+   - **Pattern matching**: estructuras como `match`, `if let`, etc., que permiten tomar decisiones según la forma y contenido de los datos.
+
+5° **Sobre el pattern matching:** Aunque puede parecer complejo al inicio (especialmente al crear tus propios tipos), si dominas las bases se vuelve una herramienta **intuitiva y concisa**. Es una de las características más **claras, expresivas y poderosas** de Rust.
+
 ### - 2.1.1 Variables, Constants, and Data Types
 
 En Rust existen varias formas de declarar una variable 
@@ -63,6 +75,31 @@ En Rust existen varias formas de declarar una variable
 ### - 2.1.3 Functions and Method Syntax
 
 
+- **Definición y sintaxis básica**:
+    - 1° Las funciones se declaran con `fn`.
+    - 2° Rust usa *snake_case* para nombrar funciones, no es obligatorio pero lo recomienda.
+    - 3° Una lista de parámetros con sus tipos.
+    - 4° Un bloque de código entre las llaves `{}`.
+- **Valores de retorno**:
+    - 1° El valor retornado puede ser:
+        - **Implícito** (última expresión sin `;`).
+        - **Explícito** usando `return`.
+- **Función `main`**:
+    - 1° main, es la entrada del programa (**SIEMPRE!** el programa empezará por aquí).
+- **Parámetros y argumentos**:
+    - 1° Los parámetros y argumentos, deben ir con **NOMBRE y TIPO**.
+    - 2° Los tipos **DEBEN SER SIEMPRE** deben ser **EXPLÍCITOS**.
+    - 3° Permite múltiples parámetros.
+- **Estilo de nombres**:
+    - 1° Se debe usar *snake_case* para nombrar las **funciones y variables**, Puedes usar otras formas, pero no es recomendable.
+- **Expresiones vs. Sentencias**:
+    - 1° **Sentencias**: Las sentencias son las que ejecutan acciones y no devuelven un valor.
+    - 2° **Expresiones**: Las expresiones devuelven un valor.
+    Nota (**IMPORTANTE**): añadir un `;` a una expresión la convierte en una sentencia (y deja de retornar valor).
+- **Bloques como expresiones**
+    - 1° Los bloques compuestos por `{}` tienen la capacidad de devolver un valor.
+- **Errores comunes**
+    - 1° Cuando pones un `;` finalizando una expresión que debería retornar un valor te va a causar un error.
 
 ---
 
